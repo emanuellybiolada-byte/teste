@@ -1,1 +1,32 @@
+/* Reseta margens padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Um cinza claro suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura toda da tela */
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #4A90E2; /* Um azul bonito */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+}
