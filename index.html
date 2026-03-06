@@ -3,15 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site</title>
+    <title>Olá Mundo - Batman Edition</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <div class="glass-container">
         <h1>Olá, Mundo!</h1>
-        <p>Este é meu primeiro projeto usando HTML e CSS.</p>
+        <p>Batman está aqui para te salvar do tédio!</p>
+        <button id="batBotao" class="btn-batman">Chamar o Batmóvel</button>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    /* Imagem de fundo do Batman/Gotham */
+    background: url('https://images.unsplash.com/photo-1509248961158-e54f6934749c?q=80&w=2037&auto=format&fit=crop') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.15); /* Fundo branco bem transparente */
+    backdrop-filter: blur(15px); /* Efeito de vidro fosco */
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #0d3b66; /* Azul escuro inspirado na imagem */
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-batman {
+    background-color: #1a4a8d; /* Azul do botão da imagem */
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-batman:hover {
+    background-color: #0d2b52;
+    transform: scale(1.05);
+}document.getElementById('batBotao').addEventListener('click', function() {
+    alert("Vrummm! O Batmóvel está a caminho!");
+    this.innerText = "Batmóvel chamado! 🦇";
+    this.style.backgroundColor = "#222";
+});
