@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batman x Nanno: Olá Mundo</title>
+    <title>Olá Mundo: Justice & Karma</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="glass-card">
-        <div class="header-icons">🦇 + 🍎</div>
-        <h1 class="neon-title">Olá, Mundo!</h1>
-        <p>A justiça de Gotham e o julgamento da Nanno em um só lugar.</p>
+    <div class="glass-container">
+        <div class="icons">🦇 🍎</div>
+        <h1>Olá, Mundo!</h1>
+        <p>Onde o morcego vigia, a garota de fora julga.</p>
         
-        <div class="button-wrapper">
-            <button class="btn-hybrid">ESCOLHA SEU DESTINO</button>
-        </div>
+        <button class="botao-interativo">CLIQUE PARA INTERAGIR</button>
     </div>
 
 </body>
 </html>
+2. CSS (style.css)
+CSS
+
 * {
     margin: 0;
     padding: 0;
@@ -27,72 +28,67 @@
 }
 
 body {
-    /* Fundo híbrido: Cidade de Gotham com névoa de mistério */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(13, 0, 32, 0.9)), 
-                url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=2070&auto=format&fit=crop');
+    /* Fundo escuro com mistura de azul e roxo */
+    background: linear-gradient(135deg, #0a0a0c 0%, #1a0b2e 100%);
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.glass-card {
+.glass-container {
+    /* Efeito de Vidro */
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-    padding: 50px;
+    border-radius: 20px;
+    
+    padding: 60px;
     text-align: center;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    max-width: 450px;
+    max-width: 500px;
     width: 90%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 }
 
-.header-icons {
-    font-size: 2rem;
+.icons {
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    filter: drop-shadow(0 0 10px #fff);
 }
 
-.neon-title {
-    color: #fff;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    /* Mix de azul (Batman) e roxo (Nanno) */
-    text-shadow: 0 0 10px #fff, 
-                 0 0 20px #4A90E2, 
-                 0 0 30px #7b1fa2;
+h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    /* Neon Híbrido: Azul Batman + Roxo Nanno */
+    text-shadow: 0 0 10px #fff, 0 0 20px #4A90E2, 0 0 30px #7b1fa2;
 }
 
 p {
-    color: #ccc;
+    color: #b0b0b0;
     font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
-.btn-hybrid {
-    background: transparent;
+.botao-interativo {
+    background: #1a4a8d; /* Azul Batman */
     color: white;
-    padding: 15px 30px;
-    border: 2px solid #4A90E2;
+    padding: 15px 40px;
+    border: none;
     border-radius: 50px;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 2px;
     cursor: pointer;
-    transition: all 0.4s ease;
-    box-shadow: 0 0 15px rgba(74, 144, 226, 0.3);
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.btn-hybrid:hover {
-    background: #7b1fa2; /* Muda para a cor da Nanno no hover */
-    border-color: #fff;
-    box-shadow: 0 0 25px #7b1fa2;
-    transform: translateY(-5px);
-}
+.botao-interativo:hover {
+    background: #7b1fa
