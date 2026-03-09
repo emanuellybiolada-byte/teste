@@ -76,3 +76,28 @@ p {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px #7b1fa2;
 }
+/* Estilo extra para a leitura do livro */
+.texto-livro {
+    text-align: left;
+    color: #eee;
+    margin: 20px 0;
+    line-height: 1.6;
+    max-height: 300px;
+    overflow-y: auto; /* Adiciona scroll se o texto for longo */
+    padding-right: 10px;
+}
+
+h2 {
+    color: #7b1fa2;
+    text-shadow: 0 0 10px #7b1fa2;
+    margin-bottom: 15px;
+}
+
+/* Customizando a barra de rolagem para combinar com o tema */
+.texto-livro::-webkit-scrollbar {
+    width: 5px;
+}
+.texto-livro::-webkit-scrollbar-thumb {
+    background: #4A90E2;
+    border-radius: 10px;
+}
