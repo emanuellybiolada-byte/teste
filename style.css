@@ -1,1 +1,50 @@
+body {
+    background-color: #0d001a; /* Roxo bem escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+    overflow: hidden;
+}
 
+.container {
+    text-align: center;
+}
+
+.titulo-neon {
+    font-size: 3rem;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+    margin-bottom: 20px;
+}
+
+.personagens {
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+.botao-area {
+    margin-top: 30px;
+}
+
+.btn-entrar {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+}
+
+.btn-entrar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff00ff, 0 0 10px #00ffff;
+}
